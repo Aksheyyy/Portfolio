@@ -17,16 +17,17 @@ const HeroSection = () => {
   }, []);
 
   return (
+
     <div
     data-aos="fade-up" 
     data-aos-easing="ease-in"
     className="flex flex-col md:flex-row w-full h-screen">
       {/* Hamburger Menu */}
       {showHam && (
-        <div className="absolute top-2 right-2 sm:top-6 sm:right-6 z-20">
+        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20">
           <button
             onClick={toggleNav}
-            className="text-white p-1 md:p-2 bg-gray-800 rounded"
+            className="text-white p-2 bg-gray-800 rounded"
           >
             <span className="text-md md:text-3xl">&#9776;</span>
           </button>
